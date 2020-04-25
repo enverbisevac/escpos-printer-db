@@ -19,7 +19,7 @@ def load_encodings():
     """
     Load in all the encodings from the encoding definition file
     """
-    encoding_fn = os.path.dirname(__file__) + "/../data/encoding.yml"
+    encoding_fn = os.path.dirname(__file__) + "../data/encoding.yml"
     encodings_raw = yaml.safe_load(open(encoding_fn).read())
     return encodings_raw
 
