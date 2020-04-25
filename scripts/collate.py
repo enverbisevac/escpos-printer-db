@@ -14,6 +14,7 @@ import os
 import pyaml
 import yaml
 
+
 def load_encodings():
     """
     Load in all the encodings from the encoding definition file
@@ -21,6 +22,7 @@ def load_encodings():
     encoding_fn = os.path.dirname(__file__) + "/../data/encoding.yml"
     encodings_raw = yaml.safe_load(open(encoding_fn).read())
     return encodings_raw
+
 
 def load_profiles():
     """
@@ -35,14 +37,15 @@ def load_profiles():
         profile_dict = yaml.safe_load(open(profiles_dir + profile_fn).read())
         # One item per file
         assert len(profile_dict) == 1, "{}: expected one entry, got {}" \
-        .format(profile_fn, len(profile_dict))
+            .format(profile_fn, len(profile_dict))
         # Item must match filename
         profile_name, profile_val = profile_dict.popitem()
         assert profile_name + ".yml" == profile_fn, \
-                "{}: Expected to find profile named the same as file, got {}" \
+            "{}: Expected to find profile named the same as file, got {}" \
                 .format(profile_fn, profile_name)
         profiles_raw[profile_name] = profile_val
     return profiles_raw
+
 
 def substitute_profile(profile_name, profiles_raw, encodings_raw):
     """
@@ -55,8 +58,8 @@ def substitute_profile(profile_name, profiles_raw, encodings_raw):
     values = [profiles_raw[current_key]]
     while 'inherits' in profiles_raw[current_key]:
         assert not profiles_raw[current_key]['inherits'] in keys, \
-        "Profile {}: Circular reference calculating inheritance" \
-        .format(profile_name)
+            "Profile {}: Circular reference calculating inheritance" \
+                .format(profile_name)
         current_key = profiles_raw[current_key]['inherits']
         keys.append(current_key)
         values.append(profiles_raw[current_key])
@@ -66,8 +69,8 @@ def substitute_profile(profile_name, profiles_raw, encodings_raw):
     required_keys = ['vendor', 'notes', 'name']
     for i in required_keys:
         assert i in profiles_raw[profile_name].keys(), \
-        "{}: Profile key '{}' must be defined in every profile" \
-        .format(profile_name, i)
+            "{}: Profile key '{}' must be defined in every profile" \
+                .format(profile_name, i)
 
     # Merge base profiles and sub-profiles by overriding entire keys, except for
     # 'features' list, which are merged item-by-item.
@@ -78,28 +81,28 @@ def substitute_profile(profile_name, profiles_raw, encodings_raw):
         del profile['inherits']
 
     # Sanity check for required keys exist
-    required_keys = ['vendor', 'features', 'media', 'notes', 'fonts', 'colors', \
-                     'codePages', 'name']
+    required_keys = ['vendor', 'features', 'media', 'notes', 'fonts', 'colors', 'codePages', 'name']
     for i in required_keys:
         assert i in profile.keys(), \
             "{}: Profile key '{}' must be defined or inherited" \
-            .format(profile_name, i)
+                .format(profile_name, i)
 
     # Sanity check for required features exist
-    required_features = ['starCommands', 'highDensity', 'barcodeB', \
+    required_features = ['starCommands', 'highDensity', 'barcodeB',
                          'bitImageColumn', 'graphics', 'qrCode', 'bitImageRaster']
     for i in required_features:
         assert i in profile['features'].keys(), \
             "{}: Profile feature '{}' must be defined or inherited" \
-            .format(profile_name, i)
+                .format(profile_name, i)
 
     # Reference check over encodings
     for i in profile['codePages'].values():
         assert i in encodings_raw.keys(), \
             "{}: Profile claims to support fictional encoding '{}'" \
-            .format(profile_name, i)
+                .format(profile_name, i)
 
     return profile
+
 
 def filter_encodings(encodings_raw, profiles_subsituted):
     """
@@ -117,6 +120,7 @@ def filter_encodings(encodings_raw, profiles_subsituted):
         used = profile['codePages'].values()
         unused = [x for x in unused if x not in used]
     return {k: v for k, v in encodings_raw.items() if k not in unused}
+
 
 def run_collation():
     """
@@ -143,6 +147,7 @@ def run_collation():
     yml_capabilities = pyaml.dumps(ordered_dict, string_val_style='"', explicit_start=True)
     with open(os.path.dirname(__file__) + "/../dist/capabilities.yml", "wb+") as yml_f:
         yml_f.write(yml_capabilities)
+
 
 if __name__ == "__main__":
     run_collation()

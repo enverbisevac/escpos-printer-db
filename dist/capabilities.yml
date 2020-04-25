@@ -4,6 +4,12 @@ encodings:
     name: "Unimplemented Star-specific CP1001"
   CP1098:
     name: "CP1098"
+  CP1118:
+    iconv: "CP1118"
+    name: "CP1118"
+  CP1119:
+    iconv: "CP1119"
+    name: "CP1119"
   CP1125:
     iconv: "CP1125"
     name: "CP1125"
@@ -225,6 +231,8 @@ encodings:
     iconv: "ISO_8859-9"
     name: "ISO_8859-9"
     python_encode: "iso8859_9"
+  KU42:
+    name: "Thai"
   OXHOO-EUROPEAN:
     data:
       - "ÇüéâäàåçêëèïîìÄÅ"
@@ -261,6 +269,10 @@ encodings:
       - " ỎÕÓỌỒỔỖỐỘỜỞỠỚỢÙ"
       - " ỦŨÚỤỪỬỮỨỰỲỶỸÝỴ "
     name: "Vietnamese TCVN-3 1"
+  TIS11:
+    name: "Thai"
+  TIS18:
+    name: "Thai"
   Unknown:
     name: "Unknown"
     notes: "Code page that has not yet been identified."
@@ -1256,6 +1268,89 @@ profiles:
     name: "TM-P80 (42 column mode)"
     notes: "Portable printer (42-column mode)"
     vendor: "Epson"
+  TM-T20II:
+    codePages:
+      0: "CP437"
+      1: "CP932"
+      2: "CP850"
+      3: "CP860"
+      4: "CP863"
+      5: "CP865"
+      11: "CP851"
+      12: "CP853"
+      13: "CP857"
+      14: "CP737"
+      15: "ISO_8859-7"
+      16: "CP1252"
+      17: "CP866"
+      18: "CP852"
+      19: "CP858"
+      20: "KU42"
+      21: "TIS11"
+      26: "TIS18"
+      30: "TCVN-3-1"
+      31: "TCVN-3-2"
+      32: "CP720"
+      33: "CP775"
+      34: "CP855"
+      35: "CP861"
+      36: "CP862"
+      37: "CP864"
+      38: "CP869"
+      39: "ISO_8859-2"
+      40: "ISO_8859-15"
+      41: "CP1098"
+      42: "CP1118"
+      43: "CP1119"
+      44: "CP1125"
+      45: "CP1250"
+      46: "CP1251"
+      47: "CP1253"
+      48: "CP1254"
+      49: "CP1255"
+      50: "CP1256"
+      51: "CP1257"
+      52: "CP1258"
+      53: "RK1048"
+      255: "Unknown"
+    colors:
+      0: "black"
+    features:
+      barcodeA: true
+      barcodeB: true
+      bitImageColumn: true
+      bitImageRaster: true
+      graphics: true
+      highDensity: true
+      paperFullCut: true
+      paperPartCut: true
+      pdf417Code: true
+      pulseBel: false
+      pulseStandard: true
+      qrCode: true
+      starCommands: false
+    fonts:
+      0:
+        columns: 48
+        name: "Font A"
+      1:
+        columns: 64
+        name: "Font B"
+    interface:
+      endpoints:
+        in: 2
+        out: 1
+      value: 0
+    media:
+      width:
+        mm: 80
+        pixels: 576
+    name: "TM-T20II"
+    notes: "Epson TM-T20II profile\n"
+    productId:
+      7: 3605
+    vendor: "Epson"
+    vendorId: 1208
   TM-T88II:
     codePages:
       0: "CP437"

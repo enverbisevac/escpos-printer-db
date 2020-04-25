@@ -311,6 +311,12 @@ CP1098: {}
 CP1112:
   iconv: CP1112
 
+CP1118:
+  iconv: CP1118
+
+CP1119:
+  iconv: CP1119
+
 CP1122:
   iconv: CP1122
 
@@ -661,7 +667,12 @@ OXHOO-EUROPEAN:
     - "™†§¶Γ◢Θ         "
     - "ß   ε           "
     - "τ               "
-
+KU42:
+  name: Thai
+TIS11:
+  name: Thai
+TIS18:
+  name: Thai
 Unknown:
   name: Unknown
   notes: Code page that has not yet been identified.
