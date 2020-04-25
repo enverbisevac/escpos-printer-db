@@ -35,3 +35,7 @@ jobs:
       run: |
         pip install pytest
         pytest
+    - name: Build profile database
+      run: |
+        cd scripts
+        python collate.py
