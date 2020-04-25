@@ -139,13 +139,13 @@ def run_collation():
 
     # Dump output in format that is safe for human consumption in reasonable quantities
     json_capabilities = json.dumps(capabilities, sort_keys=True, indent=4, separators=(',', ': '))
-    with open(os.path.dirname(__file__) + "/../dist/capabilities.json", "wb+") as json_f:
+    with open(os.path.dirname(__file__) + "../dist/capabilities.json", "wb+") as json_f:
         json_f.write(json_capabilities.encode('utf-8'))
 
     # Convert it to YAML, preserving the same order
     ordered_dict = json.loads(json_capabilities, object_pairs_hook=collections.OrderedDict)
     yml_capabilities = pyaml.dumps(ordered_dict, string_val_style='"', explicit_start=True)
-    with open(os.path.dirname(__file__) + "/../dist/capabilities.yml", "wb+") as yml_f:
+    with open(os.path.dirname(__file__) + "../dist/capabilities.yml", "wb+") as yml_f:
         yml_f.write(yml_capabilities)
 
 
