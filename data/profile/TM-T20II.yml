@@ -5,11 +5,12 @@ TM-T20II:
   vendorId: 1208
   productId:
     007: 3605
-  interface:
-    value: 0
-    endpoints:
-      out: 1
-      in: 2
+  deviceProperties:
+    interface:
+      value: 0
+      endpoints:
+        out: 1
+        in: 2
   inherits: default
   notes: >
     Epson TM-T20II profile
