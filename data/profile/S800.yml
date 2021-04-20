@@ -1,6 +1,6 @@
 ---
 S800:
-  name: S800
+  name: POS80
   vendor: "hk-shenghan"
   inherits: default
   notes: >
