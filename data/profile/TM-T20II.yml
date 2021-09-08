@@ -5,6 +5,11 @@ TM-T20II:
   inherits: default
   notes: >
     Epson TM-T20II profile
+  interfaces:
+    - eth
+    - usb
+  protocols:
+    - escpos
   media:
     width:
       mm: 80
