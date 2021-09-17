@@ -6,8 +6,8 @@ TM-T20II:
   notes: >
     Epson TM-T20II profile
   interfaces:
-    - eth
-    - usb
+    - Ethernet
+    - Usb
   protocols:
     - escpos
   media:
