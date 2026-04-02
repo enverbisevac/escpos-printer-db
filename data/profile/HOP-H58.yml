@@ -1,0 +1,168 @@
+---
+HOP-H58:
+  name: HOP-H58
+  vendor: HOIN
+  inherits: default
+  fonts:
+    0:
+      name: Font A
+      columns: 32
+    1:
+      name: Font B
+      columns: 42
+  media:
+    width:
+      mm: 58
+      pixels: 384
+    dpi: 203
+  notes: >
+      HOIN HOP-H58 58mm thermal receipt printer.
+      USB interface, supports Simplified Chinese (GB18030).
+  features:
+    barcodeA: true
+    barcodeB: true
+    bitImageRaster: true
+    bitImageColumn: true
+    graphics: false
+    starCommands: false
+    qrCode: true
+    pdf417Code: false
+    paperFullCut: false
+    paperPartCut: true
+  codePages:
+    # Std.Europe
+    0: CP437
+    # Katakana
+    1: Unknown
+    # Multilingual
+    2: CP850
+    # Portuguese
+    3: CP860
+    # Canadian French
+    4: CP863
+    # Nordic
+    5: CP865
+    # West Europe
+    6: Unknown
+    # Greek
+    7: Unknown
+    # Hebrew
+    8: Unknown
+    # East Europe
+    9: Unknown
+    # Iran
+    10: Unknown
+    # Latin-1
+    16: CP1252
+    # Cyrillic#2
+    17: CP866
+    # Latin II
+    18: CP852
+    # Multilingual Latin I+Euro
+    19: CP858
+    # Iran II
+    20: Unknown
+    # Latvian
+    21: Unknown
+    # Arabic
+    22: Unknown
+    # PT151, 1251
+    23: Unknown
+    24: CP747
+    # Baltic
+    25: CP1257
+    # Vietnam
+    27: Unknown
+    # Arabic
+    28: CP864
+    # Hebrew
+    31: Unknown
+    # Israel
+    32: CP1255
+    # Std.Europe
+    50: CP437
+    # Std.Europe
+    52: CP437
+    # Multilingual
+    53: CP858
+    # Latin-2
+    54: CP852
+    # Portuguese
+    55: CP860
+    # Icelandic
+    56: CP861
+    # Canadian
+    57: CP863
+    # Nordic
+    58: CP865
+    # Russian
+    59: CP866
+    # Bulgarian
+    60: CP855
+    # Turkey
+    61: CP857
+    # Hebrew
+    62: CP862
+    # Arabic
+    63: CP864
+    # Greek
+    64: CP737
+    # Greek
+    65: CP851
+    # Greek
+    66: CP869
+    # Lithuanian
+    68: CP772
+    # Lithuanian
+    69: CP774
+    # Latin-1
+    71: CP1252
+    # Latin-2
+    72: CP1250
+    # Cyrillic
+    73: CP1251
+    # IBM-Russian
+    74: CP3840
+    # Polish
+    76: CP3843
+    # CS2
+    77: CP3844
+    # Hungarian
+    78: CP3845
+    # Turkish
+    79: CP3846
+    # Brazil-ABNT
+    80: CP3847
+    # Brazil-ABICOMP
+    81: CP3848
+    # Lithuanian-KBL
+    83: CP2001
+    # Estonian-1
+    84: CP3001
+    # Estonian-2
+    85: CP3002
+    # Latvian-1
+    86: CP3011
+    # Latvian-2
+    87: CP3012
+    # Bulgarian
+    88: CP3021
+    # Maltese
+    89: CP3041
+    # Greek
+    90: CP1253
+    # Turkish
+    91: CP1254
+    # Arabic
+    92: CP1256
+    # Arabic
+    93: CP720
+    # Vietnam
+    94: CP1258
+    # Latvian
+    95: CP775
+    # Thai 2
+    96: Unknown
+    # Thai
+    255: Unknown
+...

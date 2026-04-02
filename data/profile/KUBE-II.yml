@@ -1,0 +1,139 @@
+---
+KUBE-II:
+  name: KUBE-II
+  vendor: "Custom"
+  inherits: default
+  notes: >
+    Custom KUBE II thermal receipt printer profile. This is an Italian-made
+    80mm embedded/kiosk thermal printer with Epson-compatible ESC/POS
+    command set, designed for kiosk and self-service applications.
+  features:
+    barcodeA: true
+    barcodeB: true
+    bitImageRaster: true
+    bitImageColumn: true
+    graphics: true
+    starCommands: false
+    qrCode: true
+    pdf417Code: true
+    highDensity: true
+    pulseStandard: true
+    pulseBel: false
+    paperFullCut: true
+    paperPartCut: true
+  colors:
+    0: black
+  fonts:
+    0:
+      name: Font A
+      columns: 48
+    1:
+      name: Font B
+      columns: 64
+  media:
+    dpi: 203
+    width:
+      mm: 80
+      pixels: 576
+  codePages:
+    # USA, Standard Europe
+    0: CP437
+    # Katakana
+    1: CP932
+    # Multilingual Latin I
+    2: CP850
+    # Portuguese
+    3: CP860
+    # Canadian French
+    4: CP863
+    # Nordic
+    5: CP865
+    # Hiragana
+    6: Unknown
+    # One-pass printing Kanji characters
+    7: Unknown
+    # One-pass printing Kanji characters
+    8: Unknown
+    # Greek CP851
+    11: CP851
+    # Greek CP853
+    12: CP853
+    # Turkish
+    13: CP857
+    # Greek
+    14: CP737
+    # Greek ISO
+    15: ISO_8859-7
+    # West European Latin
+    16: CP1252
+    # Cyrillic #2
+    17: CP866
+    # Latin-2
+    18: CP852
+    # Multilingual Latin I + Euro
+    19: CP858
+    # Thai Character Code 42
+    20: Unknown
+    # Thai Character Code 11
+    21: CP874
+    # Thai Character Code 13
+    22: Unknown
+    # Thai Character Code 14
+    23: Unknown
+    # Thai Character Code 16
+    24: Unknown
+    # Thai Character Code 17
+    25: Unknown
+    # Thai Character Code 18
+    26: Unknown
+    # Vietnamese TCVN-3 1
+    30: TCVN-3-1
+    # Vietnamese TCVN-3 2
+    31: TCVN-3-2
+    # Arabic
+    32: CP720
+    # Baltic
+    33: CP775
+    # Bulgarian
+    34: CP855
+    # Icelandic
+    35: CP861
+    # Hebrew
+    36: CP862
+    # Arabic
+    37: CP864
+    # Greek
+    38: CP869
+    # Central/East European Latin
+    39: ISO_8859-2
+    # Latin 9
+    40: ISO_8859-15
+    # CP1098
+    41: CP1098
+    # Lithuanian
+    42: CP774
+    # Lithuanian
+    43: CP772
+    # Ukrainian
+    44: CP1125
+    # Central/East European Latin
+    45: CP1250
+    # Cyrillic
+    46: CP1251
+    # Greek
+    47: CP1253
+    # Turkish
+    48: CP1254
+    # Hebrew
+    49: CP1255
+    # Arabic
+    50: CP1256
+    # Baltic
+    51: CP1257
+    # Vietnamese
+    52: CP1258
+    # Kazakhstan
+    53: RK1048
+    # Space page
+    255: Unknown
+...

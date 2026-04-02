@@ -1,0 +1,21 @@
+---
+mC-Print3:
+  name: Star mC-Print3
+  vendor: "Star Micronics"
+  inherits: mcPrint
+  notes: >
+      Star mC-Print3 thermal receipt printer (80mm). This is the
+      3-inch variant of the mC-Print series.
+  fonts:
+    0:
+      name: Font A
+      columns: 48
+    1:
+      name: Font B
+      columns: 64
+  media:
+    dpi: 203
+    width:
+      mm: 80
+      pixels: 576
+...

@@ -1,0 +1,9 @@
+---
+TSP143IV:
+  name: TSP143IV Series
+  vendor: "Star Micronics"
+  inherits: TSP100IV
+  notes: >
+      Star TSP143IV thermal receipt printer (80mm). This is a variant
+      of the TSP100IV series with ESC/POS emulation enabled.
+...
