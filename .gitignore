@@ -3,3 +3,5 @@
 *.swn
 venv
 .DS_Store
+dist/capabilities.json
+dist/capabilities.yml

@@ -148,6 +148,8 @@ def run_collation():
     # Convert it to YAML, preserving the same order
     ordered_dict = json.loads(json_capabilities, object_pairs_hook=collections.OrderedDict)
     yml_capabilities = pyaml.dumps(ordered_dict, string_val_style='"', explicit_start=True)
+    if isinstance(yml_capabilities, str):
+        yml_capabilities = yml_capabilities.encode('utf-8')
     with open(BASE_DIR + "/../dist/capabilities.yml", "wb+") as yml_f:
         yml_f.write(yml_capabilities)
 

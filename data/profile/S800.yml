@@ -32,9 +32,12 @@ S800:
     17: CP866
     18: CP852
     19: CP858
-    20: KU42
-    21: TIS11
-    26: TIS18
+    # Thai (KU42)
+    20: Unknown
+    # Thai (TIS11)
+    21: Unknown
+    # Thai (TIS18)
+    26: Unknown
     30: TCVN-3-1
     31: TCVN-3-2
     32: CP720
