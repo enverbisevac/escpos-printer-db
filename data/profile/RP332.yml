@@ -1,0 +1,107 @@
+---
+RP332:
+  name: RP332
+  vendor: Rongta
+  inherits: default
+  notes: >
+      A low-cost ESC/POS thermal printer from Rongta with support for
+      80mm and 58mm paper (defaulting to 80mm). Supports USB, serial,
+      and Ethernet-based connections.
+  features:
+    bitImageRaster: true
+    bitImageColumn: true
+    graphics: false
+    qrCode: true
+    highDensity: false
+    paperFullCut: true
+    paperPartCut: false
+  colors:
+    0: black
+  fonts:
+    0:
+      name: Font A
+      columns: 42
+    1:
+      name: Font B
+      columns: 56
+    3:
+      name: Chinese
+      columns: 21
+  media:
+    width:
+      mm: 72
+      pixels: Unknown
+    dpi: 203
+  codePages:
+    # Std.Europe
+    0: CP437
+    # Katakana
+    1: Unknown
+    # Multilingual
+    2: CP850
+    # Portuguese
+    3: CP860
+    # Canadian French
+    4: CP863
+    # Nordic
+    5: CP865
+    # Cyrillic
+    6: CP1251
+    # Cyrillic #2
+    7: CP866
+    # MIK Cyrillic/Bulgarian
+    8: Unknown
+    # Hebrew
+    15: CP862
+    # West European Latin
+    16: CP1252
+    # Greek
+    17: CP1253
+    # Latin-2
+    18: CP852
+    # Multilingual Latin I + Euro
+    19: CP858
+    # Iran II
+    20: Unknown
+    # Latvian
+    21: Unknown
+    # Arabic
+    22: CP864
+    23: ISO_8859-1
+    # Greek
+    24: CP737
+    # Baltic
+    25: CP1257
+    # Thai
+    26: Unknown
+    # Arabic
+    27: CP720
+    # Bulgarian
+    28: CP855
+    # Turkish
+    29: CP857
+    # Central/East European Latin
+    30: CP1250
+    # Baltic
+    31: CP775
+    # Turkish
+    32: CP1254
+    # Arabic
+    34: CP1256
+    # Vietnamese
+    35: CP1258
+    36: ISO_8859-2
+    37: ISO_8859-3
+    38: ISO_8859-4
+    39: ISO_8859-5
+    40: ISO_8859-6
+    41: ISO_8859-7
+    42: ISO_8859-8
+    43: ISO_8859-9
+    44: ISO_8859-15
+    # Thai 2
+    45: Unknown
+    46: CP856
+    # Thai
+    47: CP874
+...

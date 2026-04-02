@@ -1,0 +1,20 @@
+---
+TM-T70II-CH-58mm:
+  name: TM-T70II Traditional Chinese 58mm
+  vendor: "Epson"
+  notes: >
+      Epson TM-T70II Traditional Chinese model with 58mm paper.
+  inherits: TM-T70II-CH
+  fonts:
+    0:
+      name: Font A
+      columns: 34
+    1:
+      name: Font B
+      columns: 46
+  media:
+    width:
+      mm: 57.5
+      pixels: 416
+    dpi: 203
+...

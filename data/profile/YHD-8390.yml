@@ -1,0 +1,102 @@
+---
+YHD-8390:
+  name: YHD-8390
+  vendor: YHDAA
+  inherits: simple
+  notes: >
+    YHDAA YHD-8390 thermal printer.
+    Codepage changing most likely works only
+    with the factory/vendor provided software.
+  features:
+    barcodeA: true
+    barcodeB: true
+    qrCode: true
+    pdf417Code: true
+    bitImageRaster: true
+    bitImageColumn: true
+    graphics: false
+    starCommands: false
+    highDensity: true
+    pulseStandard: true
+    pulseBel: false
+    paperFullCut: false
+    paperPartCut: true
+  colors:
+    0: black
+  fonts:
+    0:
+      name: Font A
+      columns: 48
+    1:
+      name: Font B
+      columns: 64
+  media:
+    width:
+      mm: 80
+      pixels: 640
+    dpi: 203
+  codePages:
+    # Std.Europe
+    0: CP437
+    # Katakana
+    1: Unknown
+    # Multilingual
+    2: CP850
+    # Portuguese
+    3: CP860
+    # Canadian French
+    4: CP863
+    # Nordic
+    5: CP865
+    # West Europe
+    6: Unknown
+    # Greek
+    7: Unknown
+    # Hebrew
+    8: Unknown
+    # East Europe
+    9: Unknown
+    # Iran
+    10: Unknown
+    11: CP1252
+    # Cyrillic #2
+    12: CP866
+    # Latin-2
+    13: CP852
+    # Multilingual Latin I + Euro
+    14: CP858
+    # Iran II
+    15: Unknown
+    # Latvian
+    16: Unknown
+    # Arabic
+    17: Unknown
+    # Cyrillic
+    18: CP1251
+    19: CP747
+    # Baltic
+    20: CP1257
+    # Vietnam
+    21: Unknown
+    # Arabic
+    22: CP864
+    # Arabic
+    23: CP1001
+    # Turkish
+    24: CP857
+    # Hebrew
+    25: CP862
+    # Greek
+    26: CP928
+    # Greek
+    27: CP869
+    # Greek
+    28: CP851
+    # Greek
+    29: CP737
+    30: CP871
+    # Arabic
+    31: CP1256
+    # Vietnamese
+    32: CP1258
+...

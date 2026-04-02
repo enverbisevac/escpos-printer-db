@@ -1,12 +1,22 @@
 ---
-# https://support.epson.net/setupnavi/?PINF=bsmanual&OSC=WS&LG2=EN&MKN=TM-T70II
-TM-T70II:
-  name: TM-T70II
-  vendor: "Epson"
+SRP-350II:
+  name: SRP-350II
+  vendor: Bixolon
+  inherits: default
   notes: >
-      Epson TM-T70II ANK (alphanumeric) model. Supports different
-      code pages than the original TM-T70.
-  inherits: TM-T70
+      Bixolon SRP-350II thermal receipt printer.
+  fonts:
+    0:
+      name: Font A
+      columns: 42
+    1:
+      name: Font B
+      columns: 56
+  media:
+    width:
+      mm: 80
+      pixels: 576
+    dpi: 180
   codePages:
     # Std.Europe
     0: CP437
@@ -20,15 +30,6 @@ TM-T70II:
     4: CP863
     # Nordic
     5: CP865
-    # Greek
-    11: CP851
-    # Turkish
-    12: CP853
-    # Turkish
-    13: CP857
-    # Greek
-    14: CP737
-    15: ISO_8859-7
     # West European Latin
     16: CP1252
     # Cyrillic #2
@@ -37,12 +38,8 @@ TM-T70II:
     18: CP852
     # Multilingual Latin I + Euro
     19: CP858
-    # Thai Character Code 42
-    20: Unknown
     # Thai
     21: CP874
-    # Thai Character Code 18
-    26: Unknown
     # Vietnamese
     30: TCVN-3-1
     # Vietnamese
@@ -87,7 +84,6 @@ TM-T70II:
     51: CP1257
     # Vietnamese
     52: CP1258
-    # Kazakhstan
     53: RK1048
     # User-Defined Page
     255: Unknown

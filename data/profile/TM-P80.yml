@@ -18,4 +18,96 @@ TM-P80:
     width:
       mm: 72
       pixels: 576
+  codePages:
+    # Std.Europe
+    0: CP437
+    # Katakana
+    1: Unknown
+    # Multilingual
+    2: CP850
+    # Portuguese
+    3: CP860
+    # Canadian French
+    4: CP863
+    # Nordic
+    5: CP865
+    # Greek
+    11: CP851
+    # Turkish
+    12: CP853
+    # Turkish
+    13: CP857
+    # Greek
+    14: CP737
+    15: ISO_8859-7
+    # West European Latin
+    16: CP1252
+    # Cyrillic #2
+    17: CP866
+    # Latin-2
+    18: CP852
+    # Multilingual Latin I + Euro
+    19: CP858
+    # Thai Character Code 42
+    20: Unknown
+    # Thai
+    21: CP874
+    # Thai Character Code 13
+    22: Unknown
+    # Thai Character Code 14
+    23: Unknown
+    # Thai Character Code 16
+    24: Unknown
+    # Thai Character Code 17
+    25: Unknown
+    # Thai Character Code 18
+    26: Unknown
+    # Vietnamese
+    30: TCVN-3-1
+    # Vietnamese
+    31: TCVN-3-2
+    # Arabic
+    32: CP720
+    # Baltic
+    33: CP775
+    # Bulgarian
+    34: CP855
+    # Icelandic
+    35: CP861
+    # Hebrew
+    36: CP862
+    # Arabic
+    37: CP864
+    # Greek
+    38: CP869
+    39: ISO_8859-2
+    40: ISO_8859-15
+    # Farsi
+    41: CP1098
+    # Lithuanian
+    42: CP1118
+    # Lithuanian
+    43: CP1119
+    # Ukrainian
+    44: CP1125
+    # Central/East European Latin
+    45: CP1250
+    # Cyrillic
+    46: CP1251
+    # Greek
+    47: CP1253
+    # Turkish
+    48: CP1254
+    # Hebrew
+    49: CP1255
+    # Arabic
+    50: CP1256
+    # Baltic
+    51: CP1257
+    # Vietnamese
+    52: CP1258
+    # Kazakhstan
+    53: RK1048
+    # User-Defined Page
+    255: Unknown
 ...

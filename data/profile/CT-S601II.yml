@@ -1,0 +1,65 @@
+---
+CT-S601II:
+  name: CT-S601II
+  vendor: Citizen
+  inherits: default
+  notes: >
+      Citizen CT-S601II thermal receipt printer.
+  fonts:
+    0:
+      name: Font A
+      columns: 48
+    1:
+      name: Font B
+      columns: 64
+  media:
+    width:
+      mm: 80
+      pixels: 576
+    dpi: 203
+  codePages:
+    # Std.Europe
+    0: CP437
+    # Katakana
+    1: CP932
+    # Multilingual
+    2: CP850
+    # Portuguese
+    3: CP860
+    # Canadian French
+    4: CP863
+    # Nordic
+    5: CP865
+    # Latin-2
+    6: CP852
+    # Cyrillic #2
+    7: CP866
+    # Turkish
+    8: CP857
+    # West European Latin
+    9: CP1252
+    # West European Latin
+    16: CP1252
+    # Cyrillic #2
+    17: CP866
+    # Latin-2
+    18: CP852
+    # Multilingual Latin I + Euro
+    19: CP858
+    # Thai Code 11 1-Pass
+    20: Unknown
+    # Thai Code 11 3-Pass
+    21: Unknown
+    # Thai Code 18 1-Pass
+    25: Unknown
+    # Thai Code 18 3-Pass
+    26: Unknown
+    # Vietnamese
+    30: TCVN-3-1
+    # Vietnamese
+    31: TCVN-3-2
+    # Arabic
+    40: CP864
+    # User-Defined Page
+    255: Unknown
+...

@@ -1,0 +1,59 @@
+---
+# https://support.epson.net/setupnavi/?PINF=bsmanual&OSC=WS&LG2=EN&MKN=TM-T70
+TM-T70:
+  name: TM-T70
+  vendor: "Epson"
+  notes: >
+      Epson TM-T70 ANK (alphanumeric) model.
+  features:
+    barcodeA: true
+    barcodeB: true
+    bitImageRaster: true
+    bitImageColumn: true
+    graphics: true
+    starCommands: false
+    qrCode: true
+    pdf417Code: true
+    highDensity: true
+    pulseStandard: true
+    pulseBel: false
+    paperFullCut: false
+    paperPartCut: true
+  colors:
+    0: black
+  fonts:
+    0:
+      name: Font A
+      columns: 42
+    1:
+      name: Font B
+      columns: 56
+  media:
+    width:
+      mm: 79.5
+      pixels: 512
+    dpi: 180
+  codePages:
+    # Std.Europe
+    0: CP437
+    # Katakana
+    1: CP932
+    # Multilingual
+    2: CP850
+    # Portuguese
+    3: CP860
+    # Canadian French
+    4: CP863
+    # Nordic
+    5: CP865
+    # West European Latin
+    16: CP1252
+    # Cyrillic #2
+    17: CP866
+    # Latin-2
+    18: CP852
+    # Multilingual Latin I + Euro
+    19: CP858
+    # User-Defined Page
+    255: Unknown
+...

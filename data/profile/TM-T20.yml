@@ -1,26 +1,27 @@
 ---
-TM-U220:
-  name: TM-U220
-  vendor: Epson
-  inherits: simple
-  notes: Two-color impact printer with 76mm output
-  features:
-    bitImageRaster: false
-    bitImageColumn: true
-    highDensity: false
-  colors:
-    0: black
-    1: alternate
+TM-T20:
+  name: TM-T20
+  vendor: "Epson"
+  inherits: default
+  notes: >
+      Epson TM-T20 original model. Predecessor to TM-T20II.
+  fonts:
+    0:
+      name: Font A
+      columns: 42
+    1:
+      name: Font B
+      columns: 56
   media:
     width:
-      # @page 20
-      mm: 63.4
-      pixels: 200
+      mm: 80
+      pixels: 512
+    dpi: 180
   codePages:
     # Std.Europe
     0: CP437
     # Katakana
-    1: Unknown
+    1: CP932
     # Multilingual
     2: CP850
     # Portuguese

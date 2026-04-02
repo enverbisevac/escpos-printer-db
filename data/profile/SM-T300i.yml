@@ -1,0 +1,22 @@
+---
+SM-T300i:
+  name: SM-T300i
+  vendor: Star Micronics
+  inherits: default
+  notes: >
+      Star Micronics SM-T300i rugged portable thermal receipt printer.
+  features:
+    starCommands: true
+  fonts:
+    0:
+      name: Font A
+      columns: 48
+    1:
+      name: Font B
+      columns: 64
+  media:
+    width:
+      mm: 80
+      pixels: 576
+    dpi: 203
+...

@@ -1,12 +1,23 @@
 ---
-# https://support.epson.net/setupnavi/?PINF=bsmanual&OSC=WS&LG2=EN&MKN=TM-T70II
-TM-T70II:
-  name: TM-T70II
-  vendor: "Epson"
+SRP-275III:
+  name: SRP-275III
+  vendor: Bixolon
+  inherits: default
   notes: >
-      Epson TM-T70II ANK (alphanumeric) model. Supports different
-      code pages than the original TM-T70.
-  inherits: TM-T70
+      Bixolon SRP-275III impact dot matrix receipt printer.
+  media:
+    width:
+      mm: 76
+      pixels: 239
+    # @page 41
+    dpi: 80
+  fonts:
+    0:
+      name: Font A
+      columns: 35
+    1:
+      name: Font B
+      columns: 40
   codePages:
     # Std.Europe
     0: CP437
@@ -20,15 +31,6 @@ TM-T70II:
     4: CP863
     # Nordic
     5: CP865
-    # Greek
-    11: CP851
-    # Turkish
-    12: CP853
-    # Turkish
-    13: CP857
-    # Greek
-    14: CP737
-    15: ISO_8859-7
     # West European Latin
     16: CP1252
     # Cyrillic #2
@@ -37,18 +39,22 @@ TM-T70II:
     18: CP852
     # Multilingual Latin I + Euro
     19: CP858
-    # Thai Character Code 42
-    20: Unknown
     # Thai
     21: CP874
+    # Thai Character Code 13
+    22: Unknown
+    # Thai Character Code 14
+    23: Unknown
+    # Thai Character Code 16
+    24: Unknown
+    # Thai Character Code 17
+    25: Unknown
     # Thai Character Code 18
     26: Unknown
     # Vietnamese
     30: TCVN-3-1
     # Vietnamese
     31: TCVN-3-2
-    # Arabic
-    32: CP720
     # Baltic
     33: CP775
     # Bulgarian
@@ -67,28 +73,12 @@ TM-T70II:
     41: CP1098
     # Lithuanian
     42: CP774
-    # Lithuanian
-    43: CP772
-    # Ukrainian
-    44: CP1125
-    # Central/East European Latin
-    45: CP1250
-    # Cyrillic
-    46: CP1251
     # Greek
     47: CP1253
-    # Turkish
-    48: CP1254
     # Hebrew
     49: CP1255
     # Arabic
     50: CP1256
-    # Baltic
-    51: CP1257
-    # Vietnamese
-    52: CP1258
-    # Kazakhstan
-    53: RK1048
     # User-Defined Page
     255: Unknown
 ...

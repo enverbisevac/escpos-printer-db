@@ -1,12 +1,24 @@
 ---
-# https://support.epson.net/setupnavi/?PINF=bsmanual&OSC=WS&LG2=EN&MKN=TM-T70II
-TM-T70II:
-  name: TM-T70II
+TM-T70II-SA:
+  name: TM-T70II South Asia
   vendor: "Epson"
   notes: >
-      Epson TM-T70II ANK (alphanumeric) model. Supports different
-      code pages than the original TM-T70.
-  inherits: TM-T70
+      Epson TM-T70II South Asia model. Does not support code page 255
+      (User-Defined Page) or Kanji fonts.
+  inherits: TM-T70II-CH
+  fonts:
+    0:
+      name: Font A
+      columns: 48
+    1:
+      name: Font B
+      columns: 64
+    97:
+      name: Special Font A
+      columns: 48
+    98:
+      name: Special Font B
+      columns: 64
   codePages:
     # Std.Europe
     0: CP437
@@ -89,6 +101,4 @@ TM-T70II:
     52: CP1258
     # Kazakhstan
     53: RK1048
-    # User-Defined Page
-    255: Unknown
 ...

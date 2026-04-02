@@ -1,0 +1,33 @@
+---
+TM-U325D:
+  name: TM-U325D
+  vendor: "Epson"
+  inherits: simple
+  notes: >
+      Epson TM-U325D impact dot matrix receipt printer with slip
+      printing slot. Only supports bitImageColumn (ESC *) with high
+      density mode disabled. No native barcode support. No automatic
+      cutter.
+  features:
+    barcodeA: false
+    barcodeB: false
+    bitImageRaster: false
+    bitImageColumn: true
+    graphics: false
+    highDensity: false
+    paperFullCut: false
+    paperPartCut: false
+  colors:
+    0: black
+  fonts:
+    0:
+      name: Font A
+      columns: 33
+    1:
+      name: Font B
+      columns: 42
+  media:
+    width:
+      mm: 76
+      pixels: Unknown
+...

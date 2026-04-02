@@ -1,0 +1,33 @@
+---
+GP-80XXX:
+  name: GP-80XXX Series
+  vendor: GAINSCHA
+  inherits: simple
+  notes: >
+      GAINSCHA GP-80XXX Series thermal receipt printer.
+  features:
+    barcodeA: true
+    barcodeB: true
+    bitImageRaster: true
+    bitImageColumn: true
+    graphics: true
+    qrCode: false
+    pdf417Code: false
+    pulseBel: true
+    paperFullCut: true
+    paperPartCut: false
+  colors:
+    0: black
+  fonts:
+    0:
+      name: Font A
+      columns: 48
+    1:
+      name: Font B
+      columns: 64
+  media:
+    width:
+      mm: 80
+      pixels: 576
+    dpi: 203
+...
