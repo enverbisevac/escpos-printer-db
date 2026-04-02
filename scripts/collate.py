@@ -44,8 +44,8 @@ def load_profiles():
         # Item must match filename
         profile_name, profile_val = profile_dict.popitem()
         assert profile_name + ".yml" == profile_fn, \
-            "{}: Expected to find profile named the same as file, got {}" \
-                .format(profile_fn, profile_name)
+            "{}: Expected to find profile named the same as file, got {}"\
+            .format(profile_fn, profile_name)
         profiles_raw[profile_name] = profile_val
     return profiles_raw
 
@@ -60,9 +60,9 @@ def substitute_profile(profile_name, profiles_raw, encodings_raw):
     keys = [current_key]
     values = [profiles_raw[current_key]]
     while 'inherits' in profiles_raw[current_key]:
-        assert not profiles_raw[current_key]['inherits'] in keys, \
-            "Profile {}: Circular reference calculating inheritance" \
-                .format(profile_name)
+        assert profiles_raw[current_key]['inherits'] not in keys, \
+            "Profile {}: Circular reference calculating inheritance"\
+            .format(profile_name)
         current_key = profiles_raw[current_key]['inherits']
         keys.append(current_key)
         values.append(profiles_raw[current_key])
@@ -72,13 +72,13 @@ def substitute_profile(profile_name, profiles_raw, encodings_raw):
     required_keys = ['vendor', 'notes', 'name']
     for i in required_keys:
         assert i in profiles_raw[profile_name].keys(), \
-            "{}: Profile key '{}' must be defined in every profile" \
-                .format(profile_name, i)
+            "{}: Profile key '{}' must be defined in every profile"\
+            .format(profile_name, i)
 
     # Merge base profiles and sub-profiles by overriding entire keys, except for
     # 'features' list, which are merged item-by-item.
     profile = dict((k, v) for d in values[::-1] for k, v in d.items())
-    profile['features'] = dict((k, v) for d in values[::-1] for k, v in \
+    profile['features'] = dict((k, v) for d in values[::-1] for k, v in
                                (d['features'].items() if 'features' in d else []))
     if 'inherits' in profile:
         del profile['inherits']
@@ -87,22 +87,22 @@ def substitute_profile(profile_name, profiles_raw, encodings_raw):
     required_keys = ['vendor', 'features', 'media', 'notes', 'fonts', 'colors', 'codePages', 'name']
     for i in required_keys:
         assert i in profile.keys(), \
-            "{}: Profile key '{}' must be defined or inherited" \
-                .format(profile_name, i)
+            "{}: Profile key '{}' must be defined or inherited"\
+            .format(profile_name, i)
 
     # Sanity check for required features exist
     required_features = ['starCommands', 'highDensity', 'barcodeB',
                          'bitImageColumn', 'graphics', 'qrCode', 'bitImageRaster']
     for i in required_features:
         assert i in profile['features'].keys(), \
-            "{}: Profile feature '{}' must be defined or inherited" \
-                .format(profile_name, i)
+            "{}: Profile feature '{}' must be defined or inherited"\
+            .format(profile_name, i)
 
     # Reference check over encodings
     for i in profile['codePages'].values():
         assert i in encodings_raw.keys(), \
-            "{}: Profile claims to support fictional encoding '{}'" \
-                .format(profile_name, i)
+            "{}: Profile claims to support fictional encoding '{}'"\
+            .format(profile_name, i)
 
     return profile
 
@@ -114,7 +114,7 @@ def filter_encodings(encodings_raw, profiles_subsituted):
     """
     # Give everything a name if not set
     for name, encoding in encodings_raw.items():
-        if not 'name' in encoding:
+        if 'name' not in encoding:
             encoding['name'] = name
 
     # Strip out un-used code pages
