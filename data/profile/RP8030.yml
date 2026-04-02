@@ -1,0 +1,53 @@
+---
+RP8030:
+  name: RP8030
+  vendor: Sunlux
+  notes: >
+    Sunlux Thermal Receipt Printer RP8030
+  features:
+    barcodeA: true
+    barcodeB: true
+    bitImageRaster: true
+    bitImageColumn: true
+    graphics: true
+    starCommands: false
+    qrCode: true
+    pdf417Code: false
+    highDensity: true
+    pulseStandard: true
+    pulseBel: false
+    paperFullCut: true
+    paperPartCut: true
+  colors:
+    0: black
+  fonts:
+    0:
+      name: Font A
+      columns: 48
+    1:
+      name: Font B
+      columns: 64
+  media:
+    width:
+      mm: 80
+      pixels: 576
+  codePages:
+    0: CP437
+    1: CP932
+    2: CP850
+    3: CP860
+    4: CP863
+    5: CP865
+    6: CP1252
+    7: CP866
+    8: CP852
+    9: CP858
+    10: CP874
+    11: CP1250
+    12: CP1251
+    13: CP1253
+    14: CP1254
+    15: CP1255
+    16: CP1256
+    17: CP1257
+    18: CP1258
