@@ -2,3 +2,4 @@
 *.swo
 *.swn
 venv
+.DS_Store
