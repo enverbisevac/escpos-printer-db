@@ -64,6 +64,7 @@ CP424:
   python_encode: cp424
 
 CP437:
+  name: "USA, Standard Europe"
   iconv: CP437
   python_encode: cp437
 
@@ -72,9 +73,11 @@ CP500:
   python_encode: cp500
 
 CP720:
+  name: "Arabic"
   python_encode: cp720
 
 CP737:
+  name: "Greek"
   iconv: CP737
   python_encode: cp737
 
@@ -87,15 +90,18 @@ CP771:
   iconv: CP771
 
 CP772:
+  name: "Lithuanian"
   iconv: CP772
 
 CP773:
   iconv: CP773
 
 CP774:
+  name: "Lithuanian"
   iconv: CP774
 
 CP775:
+  name: "Baltic"
   iconv: CP775
   python_encode: cp775
 
@@ -109,6 +115,7 @@ CP819:
   iconv: CP819
 
 CP850:
+  name: "Multilingual Latin I"
   iconv: CP850
   python_encode: cp850
 
@@ -117,12 +124,14 @@ CP851:
   notes: "Not used, due to inconsistencies between implementations."
 
 CP852:
+  name: "Latin-2"
   iconv: CP852
   python_encode: cp852
 
 CP853: {}
 
 CP855:
+  name: "Bulgarian"
   iconv: CP855
   python_encode: cp855
 
@@ -131,37 +140,46 @@ CP856:
   python_encode: cp856
 
 CP857:
+  name: "Turkish"
   iconv: CP857
   python_encode: cp857
 
 CP858:
+  name: "Multilingual Latin I + Euro"
   python_encode: cp858
 
 CP860:
+  name: "Portuguese"
   iconv: CP860
   python_encode: cp860
 
 CP861:
+  name: "Icelandic"
   iconv: CP861
   python_encode: cp861
 
 CP862:
+  name: "Hebrew"
   iconv: CP862
   python_encode: cp862
 
 CP863:
+  name: "Canadian French"
   iconv: CP863
   python_encode: cp863
 
 CP864:
+  name: "Arabic"
   iconv: CP864
   python_encode: cp864
 
 CP865:
+  name: "Nordic"
   iconv: CP865
   python_encode: cp865
 
 CP866:
+  name: "Cyrillic #2"
   iconv: CP866
   python_encode: cp866
 
@@ -172,6 +190,7 @@ CP868:
   iconv: CP868
 
 CP869:
+  name: "Greek"
   iconv: CP869
   python_encode: cp869
 
@@ -182,6 +201,7 @@ CP871:
   iconv: CP871
 
 CP874:
+  name: "Thai"
   iconv: CP874
   python_encode: cp874
 
@@ -231,7 +251,8 @@ CP921:
 CP922:
   iconv: CP922
 
-CP928: {}
+CP928:
+  name: "Greek"
 
 CP930:
   iconv: CP930
@@ -264,7 +285,7 @@ CP950:
   python_encode: cp950
 
 CP1001:
-  name: Unimplemented Star-specific CP1001
+  name: "Arabic"
 
 CP1004:
   iconv: CP1004
@@ -416,38 +437,47 @@ CP1167:
   iconv: CP1167
 
 CP1250:
+  name: "Central/East European Latin"
   iconv: CP1250
   python_encode: cp1250
 
 CP1251:
+  name: "Cyrillic"
   iconv: CP1251
   python_encode: cp1251
 
 CP1252:
+  name: "West European Latin"
   iconv: CP1252
   python_encode: cp1252
 
 CP1253:
+  name: "Greek"
   iconv: CP1253
   python_encode: cp1253
 
 CP1254:
+  name: "Turkish"
   iconv: CP1254
   python_encode: cp1254
 
 CP1255:
+  name: "Hebrew"
   iconv: CP1255
   python_encode: cp1255
 
 CP1256:
+  name: "Arabic"
   iconv: CP1256
   python_encode: cp1256
 
 CP1257:
+  name: "Baltic"
   iconv: CP1257
   python_encode: cp1257
 
 CP1258:
+  name: "Vietnamese"
   iconv: CP1258
   python_encode: cp1258
 
@@ -473,13 +503,13 @@ CP1399:
   iconv: CP1399
 
 CP2001:
-  name: Unimplemented Star-specific CP2001
+  name: "Lithuanian-KBL"
 
 CP3001:
-  name: Unimplemented Star-specific CP3001
+  name: "Estonian-1"
 
 CP3002:
-  name: Unimplemented Star-specific CP3002
+  name: "Estonian-2"
 
 CP3011:
   name: "CP3011 Latvian"
@@ -506,34 +536,34 @@ CP3012:
     - "ĒēĢķĶļĻžŽ∙·√Ņš■ "
 
 CP3021:
-  name: Unimplemented Star-specific CP3021
+  name: "Bulgarian"
 
 CP3041:
-  name: Unimplemented Star-specific CP3041
+  name: "Maltese"
 
 CP3840:
-  name: Unimplemented Star-specific CP3840
+  name: "IBM-Russian"
 
 CP3841:
-  name: Unimplemented Star-specific CP3841
+  name: "Gost"
 
 CP3843:
-  name: Unimplemented Star-specific CP3843
+  name: "Polish"
 
 CP3844:
-  name: Unimplemented Star-specific CP3844
+  name: "CS2"
 
 CP3845:
-  name: Unimplemented Star-specific CP3845
+  name: "Hungarian"
 
 CP3847:
-  name: Unimplemented Star-specific CP3847
+  name: "Brazil-ABNT"
 
 CP3846:
-  name: Unimplemented Star-specific CP3846
+  name: "Turkish"
 
 CP3848:
-  name: Unimplemented Star-specific CP3848
+  name: "Brazil-ABICOMP"
 
 CP4517:
   iconv: CP4517

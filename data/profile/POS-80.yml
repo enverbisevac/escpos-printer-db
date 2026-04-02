@@ -1,25 +1,8 @@
 ---
-RP8030:
-  name: RP8030
-  vendor: Sunlux
-  notes: >
-    Sunlux Thermal Receipt Printer RP8030
-  features:
-    barcodeA: true
-    barcodeB: true
-    bitImageRaster: true
-    bitImageColumn: true
-    graphics: true
-    starCommands: false
-    qrCode: true
-    pdf417Code: false
-    highDensity: true
-    pulseStandard: true
-    pulseBel: false
-    paperFullCut: true
-    paperPartCut: true
-  colors:
-    0: black
+POS-80:
+  name: POS-80 Series
+  vendor: Generic
+  inherits: default
   fonts:
     0:
       name: Font A
@@ -31,6 +14,19 @@ RP8030:
     width:
       mm: 80
       pixels: 576
+    dpi: 203
+  notes: >
+      POS-80-Series thermal printer, also marketed as TP-8017.
+      300mm/s print speed, USB/RS232/LAN/WiFi interfaces.
+      Supports Simplified Chinese (GB18030).
+  features:
+    barcodeA: true
+    barcodeB: true
+    bitImageRaster: true
+    bitImageColumn: true
+    qrCode: true
+    paperFullCut: false
+    paperPartCut: true
   codePages:
     # Std.Europe
     0: CP437
@@ -54,13 +50,13 @@ RP8030:
     9: Unknown
     # Iran
     10: Unknown
-    # West European Latin
+    # Latin-1
     16: CP1252
-    # Cyrillic #2
+    # Cyrillic#2
     17: CP866
-    # Latin-2
+    # Latin II
     18: CP852
-    # Multilingual Latin I + Euro
+    # Multilingual Latin I+Euro
     19: CP858
     # Iran II
     20: Unknown
@@ -77,22 +73,15 @@ RP8030:
     27: Unknown
     # Arabic
     28: CP864
-    29: CP1001
-    # Uigur
-    30: Unknown
     # Hebrew
     31: Unknown
-    # Hebrew
+    # Israel
     32: CP1255
-    # Arabic
-    33: CP1256
     # Std.Europe
     50: CP437
-    # Katakana
-    51: Unknown
     # Std.Europe
     52: CP437
-    # Multilingual Latin I + Euro
+    # Multilingual
     53: CP858
     # Latin-2
     54: CP852
@@ -100,7 +89,7 @@ RP8030:
     55: CP860
     # Icelandic
     56: CP861
-    # Canadian French
+    # Canadian
     57: CP863
     # Nordic
     58: CP865
@@ -108,7 +97,7 @@ RP8030:
     59: CP866
     # Bulgarian
     60: CP855
-    # Turkish
+    # Turkey
     61: CP857
     # Hebrew
     62: CP862
@@ -120,14 +109,10 @@ RP8030:
     65: CP851
     # Greek
     66: CP869
-    # Greek
-    67: CP928
     # Lithuanian
     68: CP772
     # Lithuanian
     69: CP774
-    # Thai
-    70: CP874
     # Latin-1
     71: CP1252
     # Latin-2
@@ -136,8 +121,6 @@ RP8030:
     73: CP1251
     # IBM-Russian
     74: CP3840
-    # Gost
-    75: CP3841
     # Polish
     76: CP3843
     # CS2
@@ -150,8 +133,6 @@ RP8030:
     80: CP3847
     # Brazil-ABICOMP
     81: CP3848
-    # Arabic
-    82: CP1001
     # Lithuanian-KBL
     83: CP2001
     # Estonian-1
@@ -166,5 +147,20 @@ RP8030:
     88: CP3021
     # Maltese
     89: CP3041
+    # Greek
+    90: CP1253
+    # Turkish
+    91: CP1254
+    # Arabic
+    92: CP1256
+    # Arabic
+    93: CP720
+    # Vietnam
+    94: CP1258
+    # Latvian
+    95: CP775
+    # Thai 2
+    96: Unknown
     # Thai
     255: Unknown
+...
