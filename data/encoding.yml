@@ -661,6 +661,11 @@ ISO_8859-16:
 RK1048:
   iconv: RK1048
 
+PT1511251:
+  name: "Cyrillic"
+  iconv: CP1251
+  python_encode: cp1251
+
 TCVN-3-1:
   name: "Vietnamese TCVN-3 1"
   data:
