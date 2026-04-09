@@ -1,0 +1,94 @@
+---
+SRP-E300:
+  name: SRP-E300
+  vendor: Bixolon
+  inherits: default
+  notes: >
+      Bixolon SRP-E300 3-inch direct thermal receipt printer.
+      180 dpi (7 dots/mm), 72 mm print width.
+  fonts:
+    0:
+      name: Font A
+      columns: 42
+    1:
+      name: Font B
+      columns: 56
+    2:
+      name: Font C
+      columns: 56
+  media:
+    width:
+      mm: 72
+      pixels: 512
+    dpi: 180
+  codePages:
+    # Std.Europe
+    0: CP437
+    # Katakana
+    1: CP932
+    # Multilingual
+    2: CP850
+    # Portuguese
+    3: CP860
+    # Canadian French
+    4: CP863
+    # Nordic
+    5: CP865
+    # West European Latin
+    16: CP1252
+    # Cyrillic #2
+    17: CP866
+    # Latin-2
+    18: CP852
+    # Multilingual Latin I + Euro
+    19: CP858
+    # Thai
+    21: CP874
+    # Vietnamese
+    30: TCVN-3-1
+    # Vietnamese
+    31: TCVN-3-2
+    # Arabic
+    32: CP720
+    # Baltic
+    33: CP775
+    # Bulgarian
+    34: CP855
+    # Icelandic
+    35: CP861
+    # Hebrew
+    36: CP862
+    # Arabic
+    37: CP864
+    # Greek
+    38: CP869
+    39: ISO_8859-2
+    40: ISO_8859-15
+    # Farsi
+    41: CP1098
+    # Lithuanian
+    42: CP774
+    # Lithuanian
+    43: CP772
+    # Ukrainian
+    44: CP1125
+    # Central/East European Latin
+    45: CP1250
+    # Cyrillic
+    46: CP1251
+    # Greek
+    47: CP1253
+    # Turkish
+    48: CP1254
+    # Hebrew
+    49: CP1255
+    # Arabic
+    50: CP1256
+    # Baltic
+    51: CP1257
+    # Vietnamese
+    52: CP1258
+    53: RK1048
+    # User-Defined Page
+    255: Unknown
+...
