@@ -1,0 +1,88 @@
+---
+SRP-350plusII:
+  name: SRP-350plusII
+  vendor: Bixolon
+  inherits: default
+  notes: >
+      Bixolon SRP-350plusII thermal receipt printer.
+      180 dpi (7 dots/mm), 72 mm print width, 512 dots/line.
+  fonts:
+    0:
+      name: Font A
+      columns: 42
+    1:
+      name: Font B
+      columns: 56
+  media:
+    width:
+      mm: 80
+      pixels: 512
+    dpi: 180
+  codePages:
+    # Page 0  437 (USA, Standard Europe)
+    0: CP437
+    # Page 1  Katakana
+    1: CP932
+    # Page 2  850 (Multilingual)
+    2: CP850
+    # Page 3  860 (Portuguese)
+    3: CP860
+    # Page 4  863 (Canadian-French)
+    4: CP863
+    # Page 5  865 (Nordic)
+    5: CP865
+    # Page 16  1252 (Latin I)
+    16: CP1252
+    # Page 17  866 (Cyrillic #2)
+    17: CP866
+    # Page 18  852 (Latin 2)
+    18: CP852
+    # Page 19  858 (Euro)
+    19: CP858
+    # Page 21  862 (Hebrew DOS code)
+    21: CP862
+    # Page 22  864 (Arabic)
+    22: CP864
+    # Page 23  Thai42
+    23: CP874
+    # Page 24  1253 (Greek)
+    24: CP1253
+    # Page 25  1254 (Turkish)
+    25: CP1254
+    # Page 26  1257 (Baltic)
+    26: CP1257
+    # Page 27  Farsi
+    27: CP1098
+    # Page 28  1251 (Cyrillic)
+    28: CP1251
+    # Page 29  737 (Greek)
+    29: CP737
+    # Page 30  775 (Baltic)
+    30: CP775
+    # Page 31  Thai14
+    31: CP874
+    # Page 33  1255 (Hebrew New code)
+    33: CP1255
+    # Page 34  Thai 11
+    34: CP874
+    # Page 35  Thai 18
+    35: CP874
+    # Page 36  855 (Cyrillic)
+    36: CP855
+    # Page 37  857 (Turkish)
+    37: CP857
+    # Page 38  928 (Greek)
+    38: CP928
+    # Page 39  Thai 16
+    39: CP874
+    # Page 40  1256 (Arabic)
+    40: CP1256
+    # Page 41  1258 (Vietnam)
+    41: CP1258
+    # Page 42  Khmer (Cambodia)
+    42: Unknown
+    # Page 47  1250 (Czech)
+    47: CP1250
+    # User Code Page
+    255: Unknown
+...
