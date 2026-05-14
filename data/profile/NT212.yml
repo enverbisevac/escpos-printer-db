@@ -1,0 +1,35 @@
+---
+NT212:
+  name: NT212
+  vendor: SUNMI
+  inherits: default
+  notes: >
+      SUNMI NT212 thermal receipt printer with 58mm paper width.
+      Print speed: 165mm/s, Resolution: 203x203 dpi.
+      Connectivity: USB-C, WiFi, Bluetooth, Cloud.
+  media:
+    width:
+      mm: 58
+      pixels: 464
+    dpi: 203
+  codePages:
+    0: CP437
+    2: CP850
+    3: CP860
+    4: CP863
+    5: CP865
+    13: CP857
+    14: CP737
+    15: ISO_8859-7
+    16: CP1252
+    17: CP866
+    18: CP852
+    19: CP858
+    # Thai Character Code 11
+    21: CP874
+    33: CP775
+    34: CP855
+    36: CP862
+    37: CP864
+    254: CP855
+...
